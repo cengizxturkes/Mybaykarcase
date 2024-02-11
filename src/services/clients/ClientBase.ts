@@ -8,6 +8,6 @@ export const ClientBase = {
         }
     }),
     countryBase: axios.create({
-        baseURL: "https://countriesnow.space/api/v0.1/countries/info?returns=cities"
+        baseURL: "https://restcountries.com/v3.1/all"
     })
 }

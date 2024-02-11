@@ -16,7 +16,7 @@ export const CountryActionTypes = {
 export function* getCountry(action: any) {
     try {
         yield put(setLoading(true))
-        const response = yield call(() => ClientBase.axiosBase.get(`/countries?skip=${action.payload.skip}`))
+        const response = yield call(() => ClientBase.axiosBase.get(`https://restcountries.com/v3.1/all`))
         action.payload.skip > 0 ? yield put(appendCountryList(response.data)) : yield put(setCountryList(response.data))
 
     } catch (error) {

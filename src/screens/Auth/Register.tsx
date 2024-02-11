@@ -72,7 +72,7 @@ const Register = ({navigation}: any) => {
               <View
                 style={{
                   alignItems: 'center',
-                  width: '90%',
+                  width: '100%',
                 }}>
                 <TouchableOpacity
                   style={styles.selectImage}
@@ -251,10 +251,9 @@ const styles = StyleSheet.create({
     width: '100%',
     borderColor: 'gray',
     resizeMode: 'contain',
-
     borderWidth: 1,
-    paddingLeft: 10,
     marginVertical: 10,
+    textAlign: 'center',
     borderRadius: 16,
   },
   container: {
@@ -288,7 +287,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 140,
   },
-  dropdownButton: {
-    backgroundColor: 'white',
-  },
+ 
 });

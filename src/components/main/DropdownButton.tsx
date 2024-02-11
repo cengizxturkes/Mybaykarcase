@@ -80,9 +80,9 @@ export default Dropdown;
 
 const styles = StyleSheet.create({
   container: (width: string) => ({
-    width: width ? width : '48%',
-    borderWidth: 2,
-    borderColor: 'black',
+    width: width ? width : '45%',
+    borderWidth: 1,
+    borderColor: 'white',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: getWidthPercentage(0.04),
@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     height: getWidthPercentage(0.12),
     flexDirection: 'row',
+    backgroundColor: 'white',
   }),
   placeholder: {
     color: 'gray',
